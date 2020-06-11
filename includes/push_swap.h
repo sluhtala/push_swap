@@ -37,6 +37,7 @@ typedef struct	s_stacks
 }				t_stacks;
 
 void		error_mgr(void);
+void		print_usage(char *str);
 t_commands	type_commands(t_stacks *s);
 void		print_stack(t_stack *top);
 t_stacks	*init_stacks(int amount, int *nums);
@@ -45,5 +46,6 @@ t_stack		*add_top(t_stack *top, int num);
 t_stack		*rearrange(t_stack *top);
 t_stack		*delete_node(t_stack *top);
 void		ps_function(t_stacks *s, int com);
+int			*get_nums(char **args, int ac);
 
 #endif
